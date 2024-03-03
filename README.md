@@ -28,7 +28,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
 2. Navigate to the project directory:
 
-    cd openmaplocation
+    cd openMapLocation
 
 3. Install dependencies:
 
