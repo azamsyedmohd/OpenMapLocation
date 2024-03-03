@@ -1,8 +1,32 @@
-# React + Vite
+# OpenLayers React Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple React application that uses the OpenLayers library to render a map and provides functionality to draw points, lines, and polygons on the map. Additionally, it calculates measurements such as area for polygons and length for lines.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Follow these instructions to set up and run the project on your local machine.
+
+### Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+### Installation
+
+1. Clone the repository:
+
+    git clone https://github.com/your-username/openlayers-react-project.git
+
+2. Navigate to the project directory:
+
+    cd openlayers-react-project
+
+3. Install dependencies:
+
+    npm install
+   
+
+### Running the Application
+
+Run the development server:
+
+npm run dev
