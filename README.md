@@ -24,11 +24,11 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
 1. Clone the repository:
 
-    git clone https://github.com/your-username/openlayers-react-project.git
+    git clone https://github.com/Syed-Mohd-Azam/OpenMapLocation.git
 
 2. Navigate to the project directory:
 
-    cd openlayers-react-project
+    cd openmaplocation
 
 3. Install dependencies:
 
