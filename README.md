@@ -2,15 +2,15 @@
 
 This project is a simple React application that uses the OpenLayers library to render a map and provides functionality to draw points, lines, and polygons on the map. Additionally, it calculates measurements such as area for polygons and length for lines.
 ## Features
-Render a map using OpenLayers.
-Allow users to locate a pinpoint on the map.
-Implement functionality to draw a polygon, point, and line on the map.
-Optionally calculate measurements (e.g., area for polygon, length for line).
-Implemented using React and OpenLayers.
+- Render a map using OpenLayers.
+- Allow users to locate a pinpoint on the map.
+- Implement functionality to draw a polygon, point, and line on the map.
+- Optionally calculate measurements (e.g., area for polygon, length for line).
+- Implemented using React and OpenLayers.
 ## Usage
-Click on "Draw Point," "Draw Line," or "Draw Polygon" buttons to select the drawing type.
-Interact with the map to draw features.
-View area or length measurements after drawing.
+- Click on "Draw Point," "Draw Line," or "Draw Polygon" buttons to select the drawing type.
+- Interact with the map to draw features.
+- View area or length measurements after drawing.
 
 ## Getting Started
 
