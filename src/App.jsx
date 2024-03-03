@@ -38,31 +38,40 @@ const App = () => {
 
     map.addLayer(vectorLayer);
 
-    const draw = new Draw({
-      source: vectorSource,
-      type: drawType,
-      condition: click,
-    });
+    let draw;
+
+    if (drawType !== null) {
+      draw = new Draw({
+        source: vectorSource,
+        type: drawType,
+        condition: click,
+      });
+    }
 
     const modify = new Modify({ source: vectorSource });
     const snap = new Snap({ source: vectorSource });
 
-    map.addInteraction(draw);
+    if (draw) {
+      map.addInteraction(draw);
+    }
+
     map.addInteraction(modify);
     map.addInteraction(snap);
 
-    draw.on("drawend", (event) => {
-      const feature = event.feature;
-      let measurement;
+    if (draw) {
+      draw.on("drawend", (event) => {
+        const feature = event.feature;
+        let measurement;
 
-      if (drawType === "Polygon") {
-        measurement = getArea(feature.getGeometry());
-      } else if (drawType === "LineString") {
-        measurement = getLength(feature.getGeometry());
-      }
+        if (drawType === "Polygon") {
+          measurement = getArea(feature.getGeometry());
+        } else if (drawType === "LineString") {
+          measurement = getLength(feature.getGeometry());
+        }
 
-      setMeasurements({ [drawType?.toLowerCase()]: measurement });
-    });
+        setMeasurements({ [drawType?.toLowerCase()]: measurement });
+      });
+    }
 
     // Cleanup function to destroy the map on component unmount
     return () => {
@@ -80,13 +89,22 @@ const App = () => {
       <div ref={mapRef} style={{ width: "100%", height: "400px" }}></div>
 
       <div>
-        <button onClick={() => handleDrawTypeChange("Point")}>
+        <button
+          className="bg-blue-700 text-white font-semibold rounded-md p-2 m-4"
+          onClick={() => handleDrawTypeChange("Point")}
+        >
           Draw Point
         </button>
-        <button onClick={() => handleDrawTypeChange("LineString")}>
+        <button
+          className="bg-blue-700 text-white font-semibold rounded-md p-2 m-4"
+          onClick={() => handleDrawTypeChange("LineString")}
+        >
           Draw Line
         </button>
-        <button onClick={() => handleDrawTypeChange("Polygon")}>
+        <button
+          className="bg-blue-700 text-white font-semibold rounded-md p-2 m-4"
+          onClick={() => handleDrawTypeChange("Polygon")}
+        >
           Draw Polygon
         </button>
       </div>
