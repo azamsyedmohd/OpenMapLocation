@@ -27,6 +27,4 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
 ### Running the Application
 
-Run the development server:
-
 npm run dev
