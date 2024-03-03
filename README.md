@@ -39,3 +39,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
 - npm run dev
 - Visit http://localhost:5173 in your web browser to see the running application.
+## Acknowledgments
+
+- OpenLayers Documentation
+- React Documentation
