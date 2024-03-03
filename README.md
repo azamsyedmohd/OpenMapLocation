@@ -28,3 +28,4 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 ### Running the Application
 
 npm run dev
+Visit http://localhost:5173 in your web browser to see the running application.
