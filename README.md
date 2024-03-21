@@ -45,4 +45,4 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 - React Documentation
   
 ## Deployed on Netlify 
-Project Link on Netlify : https://thriving-bienenstitch-634cc4.netlify.app/
+🚀Project Link on Netlify : https://thriving-bienenstitch-634cc4.netlify.app/
